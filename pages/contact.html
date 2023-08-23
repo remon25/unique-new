@@ -747,6 +747,17 @@
               id="contact-email"
             />
           </div>
+          <div class="contact__form-div">
+            <label class="contact__form-tag">الجوال</label>
+            <input
+              type="phone"
+              name="user_phone"
+              class="contact__form-input"
+              placeholder="أكتب  رقم الجوال"
+              autocomplete="off"
+              id="contact-phone"
+            />
+          </div>
 
           <div class="contact__form-div contact__form-area">
             <label class="contact__form-tag">الرسالة</label>
@@ -860,6 +871,19 @@
                 rel="noopener"
                 target="_blank"
                 aria-label="vimeo"
+                href="https://www.tiktok.com/@up.decor?_t=8f1cHUBwB6I&_r=1"
+                class="c-social w-inline-block"
+              >
+                <div class="c-icon w-embed">
+                  <img src="../logo-tiktok-svgrepo-com.svg" alt="social" />
+                </div>
+                <div class="c-text">Tiktok</div>
+              </a>
+
+              <a
+                rel="noopener"
+                target="_blank"
+                aria-label="vimeo"
                 href="https://www.pinterest.com/UniqueProSA/"
                 class="c-social w-inline-block"
               >
@@ -881,6 +905,18 @@
                 </div>
                 <div class="c-text">Instagram</div>
               </a>
+              <a
+                target="_blank"
+                rel="noopener"
+                aria-label="instagram"
+                href="#"
+                class="c-social w-inline-block"
+              >
+                <div class="c-icon w-embed">
+                  <img src="../reshot-icon-calling-TQNEW2FHDG.svg" alt="social" />
+                </div>
+                <div class="c-text">+ 966 50 877 8586</div>
+              </a>
             </div>
           </div>
         </div>
@@ -891,6 +927,7 @@
       const contactForm = document.getElementById("contact-form"),
   contactName = document.getElementById("contact-name"),
   contactEmail = document.getElementById("contact-email"),
+  contactPhone = document.getElementById("contact-phone"),
   contactProject = document.getElementById("contact-project"),
   contactMessage = document.getElementById("contact-message");
 
@@ -900,7 +937,8 @@ let sendEmail = (e) => {
   if (
     contactName.value === "" ||
     contactEmail.value === "" ||
-    contactProject.value === ""
+    contactProject.value === ""||
+    contactPhone.value ===""
   ) {
     // add and remove color
     contactMessage.classList.remove("color-blue");
@@ -932,6 +970,7 @@ let sendEmail = (e) => {
     contactName.value = "";
     contactEmail.value = "";
     contactProject.value = "";
+    contactPhone.value=null;
   }
 };
 contactForm.addEventListener("submit",sendEmail);
