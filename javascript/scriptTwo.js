@@ -15456,7 +15456,7 @@ Webflow.require("ix2").init({
                   selector: ".p-inner",
                   selectorGuids: ["f861985a-ae16-a151-595a-5b062035b06d"],
                 },
-                yValue: -31,
+                yValue: -5,
                 xUnit: "PX",
                 yUnit: "%",
                 zUnit: "PX",

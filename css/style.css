@@ -2575,6 +2575,9 @@ h5 {
 .menu-item.m2 {
   right: 10vw;
 }
+.menu-item.m3{
+  justify-content: center;
+}
 .menu-grid {
   display: inline-block;
 }
@@ -3319,7 +3322,7 @@ h5 {
 }
 .pr-client-w h3 {
   font-family: "Kufi";
-  color: #c88769;
+  color: #0c2c37;
 }
 .pr-caption {
   position: absolute;
@@ -5621,7 +5624,7 @@ html.w-mod-js [data-ix="text-0-2"] {
     font-size: 4vw;
   }
   .pr-title {
-    font-size: 5vw;
+    font-size: 7vw;
     line-height: 11vw;
   }
   .p-title-w {
@@ -5643,7 +5646,7 @@ html.w-mod-js [data-ix="text-0-2"] {
     width: 12vw;
   }
   .pr-client {
-    font-size: 14vw;
+    font-size: 11vw;
     line-height: 11vw;
   }
   .pr-scroll {
@@ -6195,7 +6198,8 @@ html.w-mod-js [data-ix="text-0-2"] {
     font-size: 3vw;
   }
   .pr-title {
-    font-size: 5vw;
+    font-size: 8.5vw;
+    line-height: 15vw;
   }
 
   .menu-as {
@@ -7363,17 +7367,17 @@ html.w-mod-js [data-ix="text-0-2"] {
   }
 
   60% {
-    fill: #e5e3dc;
+    fill: #e5dac8;
     stroke-dashoffset: 0;
   }
   80% {
-    fill: #e5e3dc;
+    fill: #e5dac8;
   }
 
   100% {
     stroke: #e5e3e5;
     stroke-dashoffset: 0;
-    fill: #e5e3dc;
+    fill: #e5dac8;
   }
 }
 
