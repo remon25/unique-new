@@ -2218,7 +2218,7 @@ h5 {
   font-family: "Droid";
   padding-right: 1vh;
   font-size: 3vh;
-  line-height: 3vh;
+  line-height: 4vh;
   font-weight: 400;
   letter-spacing: -0.02em;
   text-transform: none;
@@ -3906,7 +3906,7 @@ h5 {
 .p-title-w {
   overflow: hidden;
   margin-top: 2vh;
-  height: 4vw;
+  height: 5vw;
   margin-right: auto;
   margin-left: auto;
   -webkit-transform-origin: 50% 0%;
