@@ -7461,9 +7461,7 @@ html.w-mod-js [data-ix="text-0-2"] {
   width: 20px;
   filter: invert(1);
 }
-.social-two a:last-child{
-  grid-column:span;
-}
+
 
 @media screen and (max-width: 1200px) {
   .social-two {
@@ -7472,6 +7470,7 @@ html.w-mod-js [data-ix="text-0-2"] {
     row-gap: 1rem;
     place-items: center;
   }
+  
 }
 @media screen and (max-width: 991px) {
   .social-two {
@@ -7480,6 +7479,8 @@ html.w-mod-js [data-ix="text-0-2"] {
     row-gap: 1rem;
     place-items: center;
   }
+  .social-two a:last-child{
+    grid-column: auto / span 2;}
 }
 @media screen and (max-width: 767px) {
   .contact{
@@ -7493,11 +7494,21 @@ html.w-mod-js [data-ix="text-0-2"] {
     line-height: 1.2;
     
   }
+  .social-two a:last-child{
+    grid-column: auto / span 4;
+  }
 }
-@media screen and (max-width: 767px) {
+
+@media screen and (max-width: 479px) {
   
   .social-one{
     row-gap: 3rem;
+  }
+  .social-one-inf{
+    left: 30px;
+  }
+  .social-two a:last-child{
+    grid-column: auto / span 2;
   }
   
 }
