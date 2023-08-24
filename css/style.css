@@ -2262,7 +2262,7 @@ h5 {
 }
 .contact__form-tag {
   position: absolute;
-  background-color: #f9f9f8;
+  background-color: #e5dac8;
   top: -0.75rem;
   right: 1.25rem;
   z-index: 10;
@@ -7530,7 +7530,7 @@ html.w-mod-js [data-ix="text-0-2"] {
   direction: rtl;
   width: 100%;
   height: 100vh;
-  background-color: #f9f9f8;
+  background-color: #e5dac8;
   overflow: hidden;
 }
 
