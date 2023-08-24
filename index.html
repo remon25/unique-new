@@ -294,7 +294,7 @@
           </div>
       </div>
   </div>
-    <div class="trigger burgerclickableout"></div>
+  <div class="cursor cursorcontainer"></div>
     <nav class="nav">
       <a
         targetcolor="#0D0D0D"
@@ -441,7 +441,6 @@
         </div>
       </div>
     </nav>
-    <div class="cursor cursorcontainer"></div>
 
     <div class="hero-container">
       <div class="page-container">
@@ -1181,34 +1180,39 @@
 
     );
 
-    // let menuTogglerElement = document.createElement("a");
+    let menuTogglerElement = document.createElement("a");
 
-// let attrs = {
-//   "rel": "noopener",
-//   "href": "#",
-//   "class": "trigger burgerclickablein w-inline-block",
-// };
-
-
-// function setAttributes(el, attrs) {
-//     for(var key in attrs) {
-//       el.setAttribute(key, attrs[key]);
-//     }
-
-//     el.ariaLabel = "trigger"
-//   }
-
-//   setAttributes(menuTogglerElement,attrs);
-
-//   console.log(menuTogglerElement);
+let attrs = {
+  "rel": "noopener",
+  "href": "#",
+  "class": "trigger burgerclickablein w-inline-block",
+};
 
 
-//   if(window.innerWidth < 400){
+function setAttributes(el, attrs) {
+    for(var key in attrs) {
+      el.setAttribute(key, attrs[key]);
+    }
 
-//     document.body.prepend(menuTogglerElement)
+    el.ariaLabel = "trigger";
+  }
+
+  setAttributes(menuTogglerElement,attrs);
+
+  console.log(menuTogglerElement);
 
 
-//   }
+  function appendMenu(){
+    if(window.innerWidth < 610){
+
+document.querySelector("div.trigger").parentNode.insertBefore(menuTogglerElement,document.querySelector("div.trigger").previousSibling);
+
+
+}
+  }
+
+  appendMenu();
+  window.addEventListener("resize",appendMenu);
 
 
 
