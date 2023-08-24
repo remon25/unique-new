@@ -7435,7 +7435,9 @@ html.w-mod-js [data-ix="text-0-2"] {
   text-align: end;
   color: #ece6e6 !important;
   left: 50px;
-  bottom: 15px;
+  bottom: 30px;
+  direction: ltr;
+  text-align: start;
 }
 .social-one-title h3 {
   font-size: 1.3rem;
