@@ -7776,11 +7776,11 @@ html.w-mod-js [data-ix="text-0-2"] {
 }
 @media screen and (max-width: 396px) {
   .first-heading {
-    margin-top: 6rem;
+    margin-top: 4rem;
     width: 38.5vw;
 }
 .first-heading h1{
-  font-size: 7vw;
+  font-size: 6vw;
 }
 .second-heading h1 {
   font-size: 4.5vw;
@@ -7790,7 +7790,7 @@ flex-direction: column;
 }
 
 .svg-container {
-  transform: translate(-75%, -55%) !important;
+  transform: translate(-85%, -73%) !important;
 }
 .page-footer .right{
   row-gap: 0rem;
