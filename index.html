@@ -1251,11 +1251,11 @@ document.addEventListener("touchmove", event => {
     width = coords.x / window.innerWidth
 
 
-    document.querySelector(".elastic-string path").addEventListener("touchmove",()=>{
+    document.querySelector(".elastic-string path").onmousemove = ()=>{
 
-updateCoords(coords);
+        updateCoords(coords);
 
-})
+    };
 
 })
 
