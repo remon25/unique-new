@@ -7765,8 +7765,8 @@ html.w-mod-js [data-ix="text-0-2"] {
   .hero-logo{
     padding: 1.3rem !important;
   }
-  hero-logo img {
-    width: 60px;
+  .hero-logo img {
+    width: 60px ;
   }
 }
 @media screen and (max-width: 600px) {
@@ -7788,6 +7788,9 @@ html.w-mod-js [data-ix="text-0-2"] {
   transform: translate(-71%, -60%) !important;
 }
 
+.hero-logo img {
+  width: 17vw ;
+}
 
 }
 @media screen and (max-width: 396px) {
