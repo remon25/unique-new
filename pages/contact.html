@@ -691,7 +691,7 @@
     <main class="contact">
       <div class="contact__content">
         <h3 class="contact__title" data-reveal style="--delay:0.4s">دعنا نصمم معا تصميم فريد...</h3>
-        <form class="contact__form" id="contact-form" data-reveal="right" style="--delay:0.5s">
+        <form class="contact__form" id="contact-form" data-reveal style="--delay:0.5s">
           <div class="contact__form-div">
             <label class="contact__form-tag">الأسم</label>
             <input
@@ -1466,7 +1466,8 @@ const revealElements = document.querySelectorAll("[data-reveal]");
 
 const scrollReveal = function () {
   for (let i = 0; i < revealElements.length; i++) {
-    const elementIsInScreen =true;
+    const elementIsInScreen =
+      revealElements[i].getBoundingClientRect().top < window.innerHeight / 1.15;
 
     if (elementIsInScreen) {
       revealElements[i].classList.add("revealed");
@@ -1476,6 +1477,7 @@ const scrollReveal = function () {
   }
 };
 
+window.addEventListener("scroll", scrollReveal);
 scrollReveal();
     </script>
   </body>
