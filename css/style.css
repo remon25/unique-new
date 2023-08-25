@@ -7809,3 +7809,29 @@ flex-direction: column;
 }
 
 }
+
+
+
+
+/* custom cursor */
+.mycursor {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  background-image: url('../logo\ -\ cursor.svg');
+  mix-blend-mode: exclusion;
+  border-radius:50%;
+  transform: translate(-50%, -50%) scale(0.35);
+  transition: transform 0.35s;
+  pointer-events: none;
+  z-index: 6;
+}
+.mycursor.hovered {
+  transform: translate(-50%, -50%) scale(0.5);
+}
+.mycursor.disabled {
+  transform: translate(-50%, -50%) scale(0);
+}
