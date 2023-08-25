@@ -7523,7 +7523,7 @@ html.w-mod-js [data-ix="text-0-2"] {
   position: absolute;
   top: 0;
   right: 0;
-  padding: 4rem;
+  padding: 3rem;
 }
 
 .hero-logo img {
@@ -7837,4 +7837,27 @@ flex-direction: column;
 }
 .mycursor.disabled {
   transform: translate(-50%, -50%) scale(0);
+}
+
+
+/* data reveal */
+
+[data-reveal] {
+  transform: translateY(50px);
+  opacity: 0;
+  transition: 0.6s all cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition-delay:var(--delay);
+  ;
+
+}
+[data-reveal="left"] {
+  transform: translate(-50px, 0);
+}
+[data-reveal="right"] {
+  transform: translate(50px, 0);
+}
+[data-reveal].revealed {
+  transform: translate(0, 0);
+  opacity: 1;
+
 }
