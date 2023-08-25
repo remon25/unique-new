@@ -7767,6 +7767,9 @@ html.w-mod-js [data-ix="text-0-2"] {
   .hero-logo img {
     width: 60px ;
   }
+  .hero-container .page-hero{
+    padding: 0 20px;
+  }
 }
 @media screen and (max-width: 600px) {
   .links-container {
@@ -7784,7 +7787,10 @@ html.w-mod-js [data-ix="text-0-2"] {
 }
 
 .svg-container {
-  transform: translate(-71%, -60%) !important;
+  transform: translate(-55%, -60%) !important;
+}
+.svg-container svg{
+  width: 70vw;
 }
 
 .hero-logo img {
@@ -7808,7 +7814,7 @@ flex-direction: column;
 }
 
 .svg-container {
-  transform: translate(-85%, -73%) !important;
+  transform: translate(-75%, -60%) !important;
 }
 .page-footer .right{
   row-gap: 0rem;
@@ -7823,7 +7829,20 @@ flex-direction: column;
 }
 
 }
+@media screen and (max-width:350px) {
 
+  .svg-container {
+    transform: translate(-71%, -76%) !important;
+  }
+  
+}
+@media screen and (max-width:300px) {
+
+  .svg-container {
+    transform: translate(-70%, -82%) !important;
+  }
+  
+}
 
 
 
