@@ -1467,7 +1467,7 @@ const revealElements = document.querySelectorAll("[data-reveal]");
 const scrollReveal = function () {
   for (let i = 0; i < revealElements.length; i++) {
     const elementIsInScreen =
-      revealElements[i].getBoundingClientRect().top < window.innerHeight / 1;
+      revealElements[i].getBoundingClientRect().top < window.innerHeight / 0.9;
 
     if (elementIsInScreen) {
       revealElements[i].classList.add("revealed");
