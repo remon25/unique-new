@@ -7713,6 +7713,9 @@ html.w-mod-js [data-ix="text-0-2"] {
 }
 
 @media screen and (max-width: 991px) {
+  .mycursor{
+    display: none !important;
+  }
   .nav-logo img {
     width: 4rem;
   }
