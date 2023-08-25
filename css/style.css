@@ -7523,7 +7523,7 @@ html.w-mod-js [data-ix="text-0-2"] {
   position: absolute;
   top: 0;
   right: 0;
-  padding: 3rem;
+  padding: 2rem;
 }
 
 .hero-logo img {
@@ -7762,11 +7762,18 @@ html.w-mod-js [data-ix="text-0-2"] {
   .page-footer .left {
     grid-template-columns: repeat(2, 1fr);
   }
+  .hero-logo{
+    padding: 1.3rem !important;
+  }
+  hero-logo img {
+    width: 60px;
+  }
 }
 @media screen and (max-width: 600px) {
   .links-container {
     grid-template-columns: 1fr;
   }
+ 
 }
 @media screen and (max-width: 479px) {
   .page-footer .left {
@@ -7780,6 +7787,8 @@ html.w-mod-js [data-ix="text-0-2"] {
 .svg-container {
   transform: translate(-71%, -60%) !important;
 }
+
+
 }
 @media screen and (max-width: 396px) {
   .first-heading {
