@@ -7,18 +7,18 @@
 >
   <head>
     <meta charset="utf-8" />
-    <title>unique — other</title>  
+    <title>unique — other</title>
     <link href="../../css/style.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/fflate@0.7.4/umd/index.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/EaselPlugin.min.js"></script>
-    <script defer src="../../javascript/locomotive-scroll.min.js"></script>
-    <link
+    <!-- <script defer src="../../javascript/locomotive-scroll.min.js"></script> -->
+    <!-- <link
       rel="stylesheet"
       type="text/css"
       href="../../css/locomotive-scroll.min.css"
-    />
+    /> -->
 
     <script src="https://cdn.jsdelivr.net/gh/niccolomiranda/chiara-luzzana/jsSnippets/customCursor10/index.js"></script>
 
@@ -492,7 +492,7 @@
       v0l0.5,0l2.4,0.1c0,0,0-0.6,0-1.5v-2.5C38.4,84.4,42.5,63.9,70.4,58.9z"
                       />
                     </svg>
-                    <h2 class="m-head">عن الشركة</h2>
+                    <h2 class="m-head">عنّا</h2>
                   </a>
                 </div>
               </div>
@@ -833,7 +833,7 @@
         </header>
         <div id="cover" class="pr-cover">
           <div data-scroll="0" class="c-img-wrap is-inview">
-            <div data-scroll-speed="-1.5" data-scroll="0" class="c-img">
+            <div data-scroll-speed="-1.5" data-scroll="0" class="c-img" data-reveal style="--delay:0.4s">
               <img
                 alt="cover"
                 draggable="false"
@@ -851,6 +851,7 @@
               data-scroll="0"
               data-scroll-delay="0.1"
               class="pr-quote"
+              data-reveal="right"
             >
               نحن نصنع الجودة
             </h3>
@@ -861,7 +862,7 @@
                 data-scroll-delay="0.06"
                 class="pr-icon w-embed"
               >
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 90">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 90" data-reveal="left" style="--delay:0.33s">
                   <defs />
                   <g fill="none" stroke="#000" stroke-width=".3">
                     <path
@@ -876,20 +877,20 @@
 
         <div class="photo-album">
           <div class="photo-row two">
-            <img src="./Web Pics/other/0_View19_Post.webp" alt="other" />
-            <img src="./Web Pics//other/16.webp" alt="other" />
+            <img src="./Web Pics/other/0_View19_Post.webp" alt="other" data-reveal="left" />
+            <img src="./Web Pics//other/16.webp" alt="other" data-reveal="right" style="--delay:0.3s" />
           </div>
-          <div class="photo-row one" style="justify-content: start">
+          <div class="photo-row one" style="justify-content: start" data-reveal="left">
             <img src="./Web Pics/other/16.webp" alt="other" />
           </div>
-          <div class="photo-row one">
+          <div class="photo-row one" data-reveal="right">
             <img src="./Web Pics/other/19.webp" alt="other" />
           </div>
           <div class="photo-row two" style="grid-template-columns: 0.75fr 1fr">
-            <img src="./Web Pics/other/21.webp" alt="other" />
-            <img src="./Web Pics/other/22.webp" alt="other" />
+            <img src="./Web Pics/other/21.webp" alt="other" data-reveal="left" style="--delay:0.3s"/>
+            <img src="./Web Pics/other/22.webp" alt="other" data-reveal="right" />
           </div>
-          <div class="photo-row one">
+          <div class="photo-row one" data-reveal>
             <img src="./Web Pics/other/J.webp" alt="other" />
           </div>
         </div>
@@ -1047,7 +1048,7 @@
       };
     </script>
 
-    <script>
+    <!-- <script>
       if ($(window).width() >= 991) {
         function initSmoothScroll() {
           let o,
@@ -1104,7 +1105,7 @@
             }, 1e3);
           });
       }
-    </script>
+    </script> -->
 
     <script>
       const burgerBP = [
@@ -1677,6 +1678,27 @@
             e.style.pointerEvents = "none";
           });
         });
+    </script>
+    <script>
+      // scroll reveal
+
+const revealElements = document.querySelectorAll("[data-reveal]");
+
+const scrollReveal = function () {
+  for (let i = 0; i < revealElements.length; i++) {
+    const elementIsInScreen =
+      revealElements[i].getBoundingClientRect().top < window.innerHeight / 1.25;
+
+    if (elementIsInScreen) {
+      revealElements[i].classList.add("revealed");
+    } else {
+      revealElements[i].classList.remove("revealed");
+    }
+  }
+};
+window.addEventListener("scroll", scrollReveal);
+
+scrollReveal();
     </script>
   </body>
 </html>

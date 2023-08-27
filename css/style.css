@@ -809,7 +809,7 @@ textarea.w-select {
     padding: 2rem;
   }
   .elastic.elasticbox {
-    right: -20vw;
+    right: -75%;
   }
   .h-head {
     line-height: 10vw;
@@ -2162,7 +2162,8 @@ h5 {
 }
 .p-col {
   position: relative;
-  height: 80vh;
+  display: flex;
+  height: 100vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -2180,7 +2181,7 @@ h5 {
 }
 .p-numb {
   display: inline-block;
-  padding-top: 5vh;
+  margin-top: 5rem;
   color: #0a0a0a;
   font-size: 30vh;
   line-height: 48vh;
@@ -2192,12 +2193,12 @@ h5 {
 .p-client {
   font-family: "Kufi";
   display: inline-block;
-  padding-top: 1vh;
+  padding-top: 1rem;
   padding-right: 0.5vh;
   -webkit-transform-origin: 0% 100%;
   -ms-transform-origin: 0% 100%;
   transform-origin: 0% 100%;
-  font-size: 9vh;
+  font-size: 4.5vw;
   line-height: 10vh;
   text-align: center;
   color: #0c2c37;
@@ -2219,8 +2220,8 @@ h5 {
 .p-title {
   font-family: "Droid";
   padding-right: 1vh;
-  font-size: 3vh;
-  line-height: 4vh;
+  font-size: 2vw;
+  line-height: 1.3;
   font-weight: 400;
   letter-spacing: -0.02em;
   text-transform: none;
@@ -2599,7 +2600,7 @@ h5 {
   overflow: hidden;
   float: left;
   clear: both;
-  height: 60px;
+  height: 50px;
 }
 .menu-as.ma2 {
   margin-top: 16vw;
@@ -3406,6 +3407,7 @@ h5 {
   z-index: 2;
   width: 100%;
   height: 100%;
+  overflow: hidden;
   background-image: -webkit-gradient(
     linear,
     left top,
@@ -3790,10 +3792,12 @@ h5 {
 .a-img {
   width: 40vw;
   height: 50vw;
-  filter: grayscale(1);
   transition: 0.3s all ease;
 }
-.a-img:hover {
+.a-img .img{
+  filter: grayscale(1);
+}
+.a-img:hover .img {
   filter: grayscale(0);
 }
 .aw-div {
@@ -3898,11 +3902,14 @@ h5 {
   margin-right: auto;
   margin-left: auto;
 }
+.p-numb-w h2{
+  font-size: 0;
+  line-height: 0;
+}
 .p-client-w {
   overflow: hidden;
   margin-right: auto;
   margin-left: auto;
-  height: 24vh;
   -webkit-transform-origin: 50% 0%;
   -ms-transform-origin: 50% 0%;
   transform-origin: 50% 0%;
@@ -3910,7 +3917,7 @@ h5 {
 .p-title-w {
   overflow: hidden;
   margin-top: 2vh;
-  height: 5vw;
+  height: 6rem;
   margin-right: auto;
   margin-left: auto;
   -webkit-transform-origin: 50% 0%;
@@ -3924,7 +3931,7 @@ h5 {
   right: 0;
   bottom: 0;
   display: none;
-  background-color: #e5e3dc;
+  background-color: #e5dac8;
 }
 .a-footer {
   width: 100%;
@@ -4222,7 +4229,7 @@ h5 {
 }
 .bp-title {
   font-size: 3vw;
-  line-height: 3vw;
+  line-height: 1.3;
   text-decoration: underline;
 }
 .bp-text {
@@ -5460,7 +5467,7 @@ html.w-mod-js [data-ix="text-0-2"] {
     height: 100%;
   }
   .p-col.pagelink {
-    width: 39vh;
+    width: 33.33vw;
     height: 78vh;
   }
   .contact {
@@ -5617,10 +5624,11 @@ html.w-mod-js [data-ix="text-0-2"] {
   }
 
   main#work {
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
   }
   .p-client {
     font-size: 4vw;
+    margin-bottom: 1rem;
   }
   .pr-title {
     font-size: 7vw;
@@ -7279,7 +7287,7 @@ html.w-mod-js [data-ix="text-0-2"] {
 }
 .photo-album img {
   filter: grayscale(1);
-  transition: 0.3s all ease-in-out;
+  transition: 0.6s all ease;
 }
 .photo-album img:hover {
   filter: grayscale(0);
@@ -7288,6 +7296,7 @@ html.w-mod-js [data-ix="text-0-2"] {
 .photo-row {
   display: grid;
   justify-content: center;
+  overflow: hidden;
 }
 
 .photo-row.one {
@@ -7750,6 +7759,7 @@ html.w-mod-js [data-ix="text-0-2"] {
     column-gap: 1rem;
   }
 }
+
 @media screen and (max-width: 700px) {
   .first-heading {
     margin-top: 3rem;
@@ -7779,7 +7789,7 @@ html.w-mod-js [data-ix="text-0-2"] {
 }
 @media screen and (max-width: 479px) {
   .page-footer .left {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     row-gap: 0.15rem;
   }
   .second-heading h1 {
@@ -7875,13 +7885,14 @@ flex-direction: column;
 [data-reveal] {
   transform: translateY(50px);
   opacity: 0;
-  transition: 0.6s all cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: 1.2s all cubic-bezier(0.25, 0.46, 0.45, 0.94);
   transition-delay:var(--delay);
   ;
 
 }
 [data-reveal="left"] {
   transform: translate(-50px, 0);
+
 }
 [data-reveal="right"] {
   transform: translate(50px, 0);
