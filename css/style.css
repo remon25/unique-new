@@ -7792,6 +7792,10 @@ html.w-mod-js [data-ix="text-0-2"] {
     grid-template-columns: 1fr 1fr;
     row-gap: 0.15rem;
   }
+  .page-footer{
+    flex-direction: column;
+    row-gap: 0.25rem;
+  }
   .second-heading h1 {
     font-size: 3.8vw;
 }
